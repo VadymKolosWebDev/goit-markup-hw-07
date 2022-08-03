@@ -1,4 +1,4 @@
-.slogan {
+.hero {
 	margin: auto;
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		url(../images/img-index/img-hero.jpg);
@@ -10,7 +10,7 @@
 	padding-bottom: 200px;
 }
 
-.slogan-title {
+.hero__title {
 	margin-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
@@ -21,7 +21,7 @@
 	color: $text-color-light;
 }
 
-.slogan-btn {
+.hero__btn {
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -41,10 +41,11 @@
 	background-color: $button-color;
 	color: $text-color-light;
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@include trans (background-color);
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color-button;
+	}
 }
 
-.slogan-btn:hover,
-.slogan-btn:focus {
-	background-color: $accent-color-button;
-}

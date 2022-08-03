@@ -11,51 +11,48 @@
 <body>
 
     <!-- Header with logotype, navigation and contacts -->
-    <header>
-        <div class="container">
-            <div class="header-links">
-            <nav class="navbar">
+    <header class="header">
+        <div class="header__links container">
+            <nav class="nav">
 
-            <!-- Logotype header -->
-            <a href="./index.html" class="logo">Web<span class="logo-top">Studio</span></a></span></a>
-            
-            <!-- Navigation  -->
-            <ul class="navigation">
-                <li class="nav-item">
-                    <a href="./index.html" class="nav-link">Студия</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./portfolio.html" class="nav-link current">Портфолио</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Контакты</a>
-                </li>
-            </ul>
-            </nav>
-            
-            <!-- Links -->
-            <address class="address-links">
-                <ul class="address-top">
-                    <li class="link-top-item">
-                        
-                        <a href="mailto:info@devstudio.com" class="link-top">
-                            <svg class="icon-address" aria-hidden="true">
-                                <use href="./images/svg/icons.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com</a>
+                <!-- Logotype header -->
+                <a href="./index.html" class="logo">Web<span class="logo-top">Studio</span></a></span></a>
+                
+                <!-- Navigation  -->
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Студия</a>
                     </li>
-                    <li class="link-top-item">
-                        
-                        <a href="tel:+38 096 111 11 11" class="link-top">
-                            <svg class="icon-address" aria-hidden="true">
-                                <use href="./images/svg/icons.svg#icon-phone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
+                    <li class="nav__item">
+                        <a href="./portfolio.html" class="nav__link current">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Контакты</a>
                     </li>
                 </ul>
+            </nav>
+
+            <!-- Links -->
+            <address class="address--top">
+                    <ul class="address__list--top">
+                        <li class="address__item--top">
+                            
+                            <a href="mailto:info@devstudio.com" class="address__link--top">
+                                <svg class="address__icon" aria-hidden="true">
+                                    <use href="./images/svg/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="address__item--top">
+                            
+                            <a href="tel:+38 096 111 11 11" class="address__link--top">
+                                <svg class="address__icon" aria-hidden="true">
+                                    <use href="./images/svg/icons.svg#icon-phone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
             </address>
-        
-        </div>
         </div>
     </header>
 
@@ -67,8 +64,8 @@
             
             <div class="container">
 
-                <h1 class="invisible"></h1> <!-- todo Invisible -->
-                <h2 class="invisible"></h2> <!-- todo Invisible -->
+                <h1 class="visually-hidden"></h1> <!-- todo Invisible -->
+                <h2 class="visually-hidden"></h2> <!-- todo Invisible -->
 
                 <!-- Filter -->
                 <ul class="filter">

@@ -33,7 +33,7 @@ footer {
 	letter-spacing: 0.03em;
 
 	color: $links-color-footer;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@include trans (color);
 }
 
 .link-bottom:hover,
@@ -82,7 +82,7 @@ footer {
 	height: 44px;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@include trans (background-color);
 }
 
 .item-icon-footer:not(:last-child) {
@@ -117,7 +117,7 @@ footer {
 	color: rgba(255, 255, 255, 0.6);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@include trans (border-color);
 }
 
 .footer-email:hover,
@@ -139,7 +139,7 @@ footer {
 	letter-spacing: 0.06em;
 	background-color: #2196f3;
 	color: $text-color-light;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@include trans (background-color);
 }
 
 .btn-footer-email:hover,

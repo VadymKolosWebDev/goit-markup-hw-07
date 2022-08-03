@@ -1,21 +1,16 @@
-.achiev {
-	margin: 0;
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
 
-.achiev-list {
+.achiev__list {
 	display: flex;
 	justify-content: space-between;
 	padding: 0;
 	margin: 0;
 }
 
-.achiev-item {
+.achiev__item {
 	width: 270px;
 }
 
-.achiev-space {
+.achiev__space {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,12 +20,12 @@
 	height: 120px;
 }
 
-.achiev-icon {
+.achiev__icon {
 	width: 70px;
 	height: 70px;
 }
 
-.achiev-title {
+.achiev__title {
 	padding-bottom: 10px;
 
 	font-weight: 700;
@@ -39,10 +34,10 @@
 	text-transform: uppercase;
 }
 
-.achiev-description {
+.achiev__description {
 	margin: 0;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
-	color: var(--color-description);
+	color: $text-color-description;
 }

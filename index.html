@@ -11,120 +11,117 @@
 <body>
 
     <!-- Header with logotype, navigation and contacts -->
-    <header>
-        <div class="container">
-            <div class="header-links">
-            <nav class="navbar">
+    <header class="header">
+        <div class="header__links container">
+            <nav class="nav">
 
-            <!-- Logotype header -->
-            <a href="./index.html" class="logo">Web<span class="logo-top">Studio</span></a></span></a>
-            
-            <!-- Navigation  -->
-            <ul class="navigation">
-                <li class="nav-item">
-                    <a href="./index.html" class="nav-link current">Студия</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./portfolio.html" class="nav-link">Портфолио</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link">Контакты</a>
-                </li>
-            </ul>
-            </nav>
-            
-            <!-- Links -->
-            <address class="address-links">
-                <ul class="address-top">
-                    <li class="link-top-item">
-                        
-                        <a href="mailto:info@devstudio.com" class="link-top">
-                            <svg class="icon-address" aria-hidden="true">
-                                <use href="./images/svg/icons.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com</a>
+                <!-- Logotype header -->
+                <a href="./index.html" class="logo">Web<span class="logo-top">Studio</span></a></span></a>
+                
+                <!-- Navigation  -->
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link current">Студия</a>
                     </li>
-                    <li class="link-top-item">
-                        
-                        <a href="tel:+38 096 111 11 11" class="link-top">
-                            <svg class="icon-address" aria-hidden="true">
-                                <use href="./images/svg/icons.svg#icon-phone"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
+                    <li class="nav__item">
+                        <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__link">Контакты</a>
                     </li>
                 </ul>
+            </nav>
+
+            <!-- Links -->
+            <address class="address--top">
+                    <ul class="address__list--top">
+                        <li class="address__item--top">
+                            
+                            <a href="mailto:info@devstudio.com" class="address__link--top">
+                                <svg class="address__icon" aria-hidden="true">
+                                    <use href="./images/svg/icons.svg#icon-envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="address__item--top">
+                            
+                            <a href="tel:+38 096 111 11 11" class="address__link--top">
+                                <svg class="address__icon" aria-hidden="true">
+                                    <use href="./images/svg/icons.svg#icon-phone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
             </address>
-        
-        </div>
         </div>
     </header>
 
     <!-- Main content -->
     <main>
 
-        <section class="slogan">
+        <section class="hero">
 
             <div class="container">
             <!-- Main title -->
-            <h1 class="slogan-title">
+            <h1 class="hero__title">
                 Эффективные решения <br> для вашего бизнеса
             </h1>
 
-            <button class="slogan-btn" type="button" data-modal-open>Заказать услугу</button>
+            <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
 
 
         </section>
 
             <!-- Achievements -->
-        <section class="achiev">
+        <section class="section">
 
             <div class="container">
 
-                <h2 class="invisible"></h2>   <!--todo Invisible-->
+                <h2 class="visually-hidden"></h2>   <!--todo Invisible-->
 
-                <ul class="achiev-list">
-                    <li class="achiev-item">
-                        <div class="achiev-space">
-                            <svg class="achiev-icon">
+                <ul class="achiev__list">
+                    <li class="achiev__item">
+                        <div class="achiev__space">
+                            <svg class="achiev__icon">
                                 <use href="./images/svg/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="achiev-title">Внимание к деталям</h3>
-                        <p class="achiev-description">
+                        <h3 class="achiev__title">Внимание к деталям</h3>
+                        <p class="achiev__description">
                             Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
                     </li>
-                    <li class="achiev-item">
-                        <div class="achiev-space">
-                            <svg class="achiev-icon">
+                    <li class="achiev__item">
+                        <div class="achiev__space">
+                            <svg class="achiev__icon">
                                 <use href="./images/svg/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="achiev-title">Пунктуальность</h3>
-                        <p class="achiev-description">
+                        <h3 class="achiev__title">Пунктуальность</h3>
+                        <p class="achiev__description">
                             Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
                         </p>
                     </li>
-                    <li class="achiev-item">
-                        <div class="achiev-space">
-                            <svg class="achiev-icon">
+                    <li class="achiev__item">
+                        <div class="achiev__space">
+                            <svg class="achiev__icon">
                                 <use href="./images/svg/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="achiev-title">Планирование</h3>
-                        <p class="achiev-description">
+                        <h3 class="achiev__title">Планирование</h3>
+                        <p class="achiev__description">
                             Равным образом консультация с широким активом в значительной степени обуславливает.
                         </p>
                     </li>
-                    <li class="achiev-item">
-                        <div class="achiev-space">
-                            <svg class="achiev-icon">
+                    <li class="achiev__item">
+                        <div class="achiev__space">
+                            <svg class="achiev__icon">
                                 <use href="./images/svg/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="achiev-title">Современные технологии</h3>
-                        <p class="achiev-description">
+                        <h3 class="achiev__title">Современные технологии</h3>
+                        <p class="achiev__description">
                             Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
                     </li>
