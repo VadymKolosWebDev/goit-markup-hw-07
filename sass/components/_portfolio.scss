@@ -44,7 +44,7 @@
 	padding: 0;
 }
 
-.filter-card-item {
+.filter__card-item {
 	margin-left: 30px;
 
 	width: 370px;
@@ -65,7 +65,9 @@
 }
 
 
-
+.filter__card-item:hover .overlay {
+	transform: translatey(0);
+}
 
 
 .card__box {
@@ -76,9 +78,7 @@
 	height: 294px;
 }
 
-.filter-card-item:hover .overlay {
-	transform: translatey(0);
-}
+
 
 .overlay {
 	position: absolute;
@@ -102,16 +102,16 @@
 	margin: 0;
 }
 
-.card-img {
+.card__img {
 	width: 370px;
 	height: 294px;
 }
 
-.card-text {
+.card__text {
 	padding: 20px 24px;
 }
 
-.card-title {
+.card__title {
 	margin: 0;
 
 	font-weight: 700;
@@ -120,7 +120,7 @@
 	letter-spacing: 0.06em;
 }
 
-.card-description {
+.card__description {
 	margin: 0;
 
 	font-weight: 400;
