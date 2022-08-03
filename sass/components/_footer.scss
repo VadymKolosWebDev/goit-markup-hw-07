@@ -1,31 +1,23 @@
-footer {
-	margin: 0 auto;
-	padding-top: 60px;
-	padding-bottom: 60px;
+.footer {
+	padding: 60px 0;
 	background: $bg-color-footer;
 }
 
-.footer-wrapper {
+.footer__wrapper {
 	display: flex;
 	justify-content: space-between;
 }
 
-.logo-footer {
+.footer__logo {
 	margin-bottom: 20px;
-	margin-right: 0;
 }
 
 
-.address-bottom-list {
-	margin: 0;
-	padding: 0;
-}
-
-.link-bottom-item:not(:last-child) {
+.address__item--bottom:not(:last-child) {
 	margin-bottom: 9px;
 }
 
-.link-bottom {
+.address__link--bottom {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
@@ -34,11 +26,11 @@ footer {
 
 	color: $links-color-footer;
 	@include trans (color);
-}
 
-.link-bottom:hover,
-.link-bottom:focus {
-	color: $accent-color-link;
+	&:hover,
+	&:focus {
+		color: $accent-color-link;
+	}
 }
 
 .link-map {
@@ -46,11 +38,12 @@ footer {
 	color: $links-color-map;
 }
 
+
 .column-second {
 	margin-top: 12px;
 }
 
-.footer-icons-title {
+.footer__title {
 	margin-bottom: 20px;
 
 	text-transform: uppercase;
@@ -68,13 +61,16 @@ footer {
 	align-items: center;
 }
 
-.footer-list-icon {
+.footer__list-icon {
 	display: flex;
-	padding: 0;
-	margin: 0;
 }
 
-.icon-link-footer {
+.footer__item-icon:not(:last-child) {
+	margin-right: 10px;
+}
+
+
+.footer__icon-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -83,31 +79,25 @@ footer {
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.1);
 	@include trans (background-color);
+
+	&:hover,
+	&:focus {
+		background: $accent-color-link;
+	}
 }
 
-.item-icon-footer:not(:last-child) {
-	margin-right: 10px;
-}
 
-.icon-link-footer:hover,
-.icon-link-footer:focus {
-	background: $accent-color-link;
-}
-
-.icon-link-footer {
-	display: flex;
-}
-
-.footer-icon {
+.footer__icon {
 	fill: $icon-color-hover;
 }
 
-.footer-form {
+
+.footer__form {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.footer-email {
+.footer__email {
 	outline: none;
 	width: 358px;
 	margin-right: 12px;
@@ -118,14 +108,16 @@ footer {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	@include trans (border-color);
+
+	&:hover,
+	&:focus {
+		border-color: $accent-color-link;
+	}
 }
 
-.footer-email:hover,
-.footer-email:focus {
-	border-color: $accent-color-link;
-}
 
-.btn-footer-email {
+
+.footer__btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -140,14 +132,14 @@ footer {
 	background-color: #2196f3;
 	color: $text-color-light;
 	@include trans (background-color);
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color-button;
+	}
 }
 
-.btn-footer-email:hover,
-.btn-footer-email:focus {
-	background-color: $accent-color-button;
-}
-
-.icon-send-btn {
+.footer__icon-send {
 	width: 24px;
 	height: 24px;
 	margin-left: 10px;

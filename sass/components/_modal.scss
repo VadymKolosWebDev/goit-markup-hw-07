@@ -13,22 +13,22 @@
 	pointer-events: none;
 }
 
-.modal-box {
+.modal__box {
 	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 40px;
 	width: 528px;
 	background: $bg-color-cards;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
-	top: 50%;
-	left: 50%;
+
 	transform: translate(-50%, -50%);
 }
 
-.modal-container {
-	margin: 40px;
-}
 
-.modal-btn-close {
+
+.modal__btn--close {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -41,26 +41,27 @@
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
 	@include trans (border-color);
+
+	&:hover,
+	&:focus {
+		border-color: $accent-color-link;
+	}
 }
 
-.modal-btn-close:hover,
-.modal-btn-close:focus {
-	border-color: $accent-color-link;
-}
 
-.close-icon {
+.modal__icon--close {
 	padding: auto;
 	width: 11px;
 	height: 11px;
 	@include trans (fill);
 }
 
-.modal-btn-close:hover .close-icon,
-.modal-btn-close:hover .close-icon {
+.modal__btn--close:hover .modal__icon--close,
+.modal__btn--close:hover .modal__icon--close {
 	fill: $accent-color-link;
 }
 
-.modal-title {
+.modal__title {
 	margin-bottom: 12px;
 
 	font-weight: 700;
@@ -70,7 +71,7 @@
 	letter-spacing: 0.03em;
 }
 
-.form-place-title {
+.form__place-title {
 	margin-bottom: 4px;
 	font-weight: 400;
 	font-size: 12px;
@@ -79,20 +80,22 @@
 	color: $text-color-description;
 }
 
-.form-text-item {
+.form__text-item {
 	display: flex;
 	flex-direction: column;
+
+	&:not(:first-child) {
+		margin-top: 10px;
+	}
 }
 
-.form-text-item:not(:first-child) {
-	margin-top: 10px;
-}
 
-.form-icon-position {
+
+.form__icon-position {
 	position: relative;
 }
 
-.form-icon {
+.form__icon {
 	pointer-events: none;
 	cursor: pointer;
 	position: absolute;
@@ -102,22 +105,22 @@
 	@include trans (fill);
 }
 
-.form-name {
+.form--name {
 	width: 12px;
 	height: 12px;
 }
 
-.form-phone {
+.form--phone {
 	width: 13px;
 	height: 13px;
 }
 
-.form-evenlope {
+.form--evenlope {
 	width: 15px;
 	height: 15px;
 }
 
-.form-text {
+.form__text {
 	outline: none;
 	width: 100%;
 	padding: 12px 16px 12px 42px;
@@ -128,35 +131,39 @@
 	line-height: 1.17;
 	letter-spacing: 0.01em;
 	@include trans (border-color);
+
+	&:hover,
+	&:focus {
+		border-color: $accent-color-link;
+	}
 }
 
-.form-text:hover,
-.form-text:focus {
-	border-color: $accent-color-link;
-}
 
-.form-place {
+
+.form__place {
 	height: 40px;
 }
 
-.form-place:hover + .form-icon,
-.form-place:focus + .form-icon {
+.form__place:hover + .form__icon,
+.form__place:focus + .form__icon {
 	fill: $accent-color-link;
 }
 
-.form-feedback {
+.form__feedback {
 	resize: none;
 	padding-left: 16px;
 
 	min-height: 120px;
 	font-weight: 400;
+
+	&::placeholder {
+		color: rgba(117, 117, 117, 0.5);
+	}
 }
 
-.form-feedback::placeholder {
-	color: rgba(117, 117, 117, 0.5);
-}
 
-.form-title-privacy {
+
+.form__title-privacy {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
@@ -168,15 +175,17 @@
 	text-decoration: underline;
 	color: $accent-color-link;
 	@include trans (color);
+
+	&:hover {
+		color: $accent-color-button;
+	}
 }
 
-.policy-link:hover {
-	color: $accent-color-button;
-}
+
 
 /** Checkbox  */
 
-.form-checkbox {
+.form__checkbox {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -185,13 +194,13 @@
 	text-align: center;
 }
 
-.checkbox-place {
+.checkbox__place {
 	display: flex;
 	align-items: center;
 	position: relative;
 }
 
-.checkbox-point {
+.checkbox__point {
 	position: relative;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -206,7 +215,7 @@
 
 }
 
-.check-icon {
+.check__icon {
 	position: absolute;
 	width: 15px;
 	height: 15px;
@@ -219,11 +228,11 @@
 	@include trans (opacity);
 }
 
-.checkbox-point:checked + .check-icon {
+.checkbox__point:checked + .check__icon {
 	opacity: 1;
 }
 
-.btn-modal-submit {
+.modal__btn--submit {
 	display: block;
 	margin: 0 auto;
 	padding: 10px 55px;
@@ -237,8 +246,9 @@
 	border-radius: 4px;
 	color: $text-color-light;
 	@include trans (background-color);
+
+	&:hover {
+		background-color: $accent-color-button;
+	}
 }
 
-.btn-modal-submit:hover {
-	background-color: $accent-color-button;
-}

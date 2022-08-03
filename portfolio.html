@@ -68,28 +68,28 @@
                 <h2 class="visually-hidden"></h2> <!-- todo Invisible -->
 
                 <!-- Filter -->
-                <ul class="filter">
-                    <li class="filter-item">
-                        <button class="btn-filter" type="button">Все</button>
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Все</button>
                     </li>
-                    <li class="filter-item">
-                        <button class="btn-filter" type="button">Веб-сайты</button>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Веб-сайты</button>
                     </li>
-                    <li class="filter-item">
-                        <button class="btn-filter" type="button">Приложения</button>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Приложения</button>
                     </li>
-                    <li class="filter-item">
-                        <button class="btn-filter" type="button">Дизайн</button>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Дизайн</button>
                     </li>
-                    <li class="filter-item">
-                        <button class="btn-filter" type="button">Маркетинг</button>
+                    <li class="filter__item">
+                        <button class="filter__btn" type="button">Маркетинг</button>
                     </li>
                 </ul>
 
                 <!--Cards-->
                 <ul class="cards">
                     <li class="filter-card-item">
-                        <div class="box">
+                        <div class="card__box">
                             <img src="./images/img-portfolio/img-portfolio-card1.jpg" alt="Технокряк" class="card-img">
                             <div class="overlay">
                                 <p class="overlay-content">
@@ -106,7 +106,7 @@
                     </li>
 
                     <li class="filter-card-item">
-                        <div class="box">
+                        <div class="card__box">
                             <img src="./images/img-portfolio/img-portfolio-card2.jpg" alt="Постер New Orlean vs Golden Star" class="card-img">
                             <div class="overlay">
                                 <p class="overlay-content">
@@ -123,7 +123,7 @@
                     </li>
 
                     <li class="filter-card-item">
-                        <div class="box">
+                        <div class="card__box">
                             <img src="./images/img-portfolio/img-portfolio-card3.jpg" alt="Ресторан Seafood" class="card-img">
                             <div class="overlay">
                                 <p class="overlay-content">
@@ -140,7 +140,7 @@
                     </li>
 
                     <li class="filter-card-item">
-                        <div class="box">
+                        <div class="card__box">
                             <img src="./images/img-portfolio/img-portfolio-card4.jpg" alt="Проект Prime" class="card-img">
                             <div class="overlay">
                                 <p class="overlay-content">
@@ -157,7 +157,7 @@
                     </li>
 
                     <li class="filter-card-item">
-                        <div class="box">
+                        <div class="card__box">
                             <img src="./images/img-portfolio/img-portfolio-card5.jpg" alt="Проект Boxes" class="card-img">
                             <div class="overlay">
                                 <p class="overlay-content">
@@ -174,7 +174,7 @@
                     </li>
 
                     <li class="filter-card-item">
-                        <div class="box">
+                        <div class="card__box">
                             <img src="./images/img-portfolio/img-portfolio-card6.jpg" alt="Inspiration has no Borders" class="card-img">
                             <div class="overlay">
                                 <p class="overlay-content">
@@ -191,7 +191,7 @@
                     </li>
 
                     <li class="filter-card-item">
-                        <div class="box">
+                        <div class="card__box">
                             <img src="./images/img-portfolio/img-portfolio-card7.jpg" alt="Издание Limited Edition" class="card-img">
                             <div class="overlay">
                                 <p class="overlay-content">
@@ -208,7 +208,7 @@
                     </li>
 
                     <li class="filter-card-item">
-                        <div class="box">
+                        <div class="card__box">
                             <img src="./images/img-portfolio/img-portfolio-card8.jpg" alt="Проект LAB" class="card-img">
                             <div class="overlay">
                                 <p class="overlay-content">
@@ -225,7 +225,7 @@
                     </li>
 
                     <li class="filter-card-item">
-                        <div class="box">
+                        <div class="card__box">
                             <img src="./images/img-portfolio/img-portfolio-card9.jpg" alt="Growing Business" class="card-img">
                             <div class="overlay">
                                 <p class="overlay-content">
@@ -247,82 +247,79 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
 
         <!-- Logotype footer -->
-        <div class="container">
-            
-            <div class="footer-wrapper">
+        <div class="container footer__wrapper">
             <div class="footer-column">
-                <a href="./index.html" class="logo logo-footer">Web<span class="logo-bottom">Studio</span></a>
+                <a href="./index.html" class="logo footer__logo">Web<span class="logo-bottom">Studio</span></a>
 
             <!-- Address -->
-            <address class="address-bottom">
-                    <ul class="address-bottom-list">
-                        <li class="link-bottom-item">
-                            <a href="https://goo.gl/maps/8QyrF7WRWFhjR8cw6" class="link-bottom link-map">г. Киев, пр-т Леси Украинки, 26</a>
+            <address class="address--bottom">
+                    <ul class="address__list--bottom">
+                        <li class="address__item--bottom">
+                            <a href="https://goo.gl/maps/8QyrF7WRWFhjR8cw6" class="address__link--bottom link-map">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="link-bottom-item">
-                            <a href="mailto:info@example.com" class="link-bottom">info@example.com</a>
+                        <li class="address__item--bottom">
+                            <a href="mailto:info@example.com" class="address__link--bottom">info@example.com</a>
                         </li>
-                        <li class="link-bottom-item">
-                            <a href="tel:+38 099 111 11 11" class="link-bottom">+38 099 111 11 11</a>
+                        <li class="address__item--bottom">
+                            <a href="tel:+38 099 111 11 11" class="address__link--bottom">+38 099 111 11 11</a>
                         </li>
                     </ul>
             </address>
             
-                </div>
-                <div class="footer-column column-second">
-                    <h3 class="footer-icons-title">присоединяйтесь</h3>
-                    <ul class="footer-list-icon">
-                        <li class="item-icon-footer">
-                            <a href="" class="icon-link-footer">
-                                <svg class="footer-icon unit-icon">
+            </div>
+            <div class="footer-column column-second">
+                    <h3 class="footer__title">присоединяйтесь</h3>
+                    <ul class="footer__list-icon">
+                        <li class="footer__item-icon">
+                            <a href="" class="footer__icon-link">
+                                <svg class="footer__icon unit-icon">
                                     <use href="./images/svg/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                             
                         </li>
-                        <li class="item-icon-footer">
-                            <a href="" class="icon-link-footer">
-                                <svg class="footer-icon unit-icon">
+                        <li class="footer__item-icon">
+                            <a href="" class="footer__icon-link">
+                                <svg class="footer__icon unit-icon">
                                     <use href="./images/svg/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                             
                         </li>
-                        <li class="item-icon-footer">
-                            <a href="" class="icon-link-footer">
-                                <svg class="footer-icon unit-icon">
+                        <li class="footer__item-icon">
+                            <a href="" class="footer__icon-link">
+                                <svg class="footer__icon unit-icon">
                                     <use href="./images/svg/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                             
                         </li>
-                        <li class="item-icon-footer">
-                            <a href="" class="icon-link-footer">
-                                <svg class="footer-icon unit-icon">
+                        <li class="footer__item-icon">
+                            <a href="" class="footer__icon-link">
+                                <svg class="footer__icon unit-icon">
                                     <use href="./images/svg/icons.svg#icon-linkedin"></use>
                                 </svg>
                             </a>
                             
                         </li>
                     </ul>
-                </div>
-                <div class="footer-column column-second">
-                    <h3 class="footer-icons-title">Подпишитесь на рассылку</h3>
+            </div>
+            <div class="footer-column column-second">
+                    <h3 class="footer__title">Подпишитесь на рассылку</h3>
                     <div class="footer-form-place">
-                        <form class="footer-form">
-                            <input type="email" name="email" class="footer-email" placeholder="E-mail">
-                            <button class="btn-footer-email" type="submit" name="name">
+                        <form class="footer__form">
+                            <input type="email" name="email" class="footer__email" placeholder="E-mail">
+                            <button class="footer__btn" type="submit" name="name">
                                 Подписаться
-                                <svg class="footer-icon icon-send-btn">
+                                <svg class="footer__icon footer__icon-send">
                                     <use href="./images/svg/icons.svg#icon-send"></use>
                                 </svg>
                             </button>
                         </form>
                     </div>
-                </div>
             </div>
         </div>
     </footer>
